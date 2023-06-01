@@ -96,7 +96,8 @@ const productos = [
     }
     ]
     
-    let productosDentroPresupuesto = prompt("Quiere continuar realizando una compra?. Ahora tambien puede buscar productos dentro de su presupuesto. Indique el valor maximo de su presupuesto: ")
+let productosDentroPresupuesto = parseInt(prompt("Quiere continuar realizando una compra?. Ahora tambien puede buscar productos dentro de su presupuesto. Indique el valor maximo de su presupuesto: "))
+
+const DentroPresupuesto = productos.filter((elementos)=>(elementos.precio < productosDentroPresupuesto))
     
-    const DentroPresupuesto = productos.filter((elementos)=>console.log(elementos.precio < 500000))
-    productos.filter((elementos)=>alert(elementos.precio < 500000))
+console.log(DentroPresupuesto)
