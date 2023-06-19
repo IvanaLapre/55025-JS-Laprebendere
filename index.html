@@ -8,6 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
+    <!-- //google font // -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap" rel="stylesheet">
+    <!-- //fin google font// -->
 </head>
 <body>
 
@@ -32,6 +37,8 @@
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">HP</a></li>
                   <li><a class="dropdown-item" href="#">Asus</a></li>
+                  <li><a class="dropdown-item" href="#">Samsung</a></li>
+                  <li><a class="dropdown-item" href="#">DELL</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Novedad</a></li>
                 </ul>
@@ -42,95 +49,92 @@
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <button class="btn btn-outline-light" type="submit">Search</button>
             </form>
           </div>
         </div>
       </nav>
 
-    
-      <header>
-        <h1>Bienvenido a Electronics</h1>
-        <h3>Venta de notebooks</h3>
+    <header class="headerInicio">
+      <h1> Electronics</h1>
+      <h3>Todos los productos para armar tu PC</h3>
     </header>
 
 
     <main>
-        <h2>Trabajamos con marcas de primer nivel</h2>
+        <h2 class="tituloH2">Trabajamos con marcas de primer nivel</h2>
         <div class="cajasGrid">
             <div class="caja">
                 <img src="./img/Logo/logo-hp.svg" alt="logo HP" height="180px" width="180px">
-                <p>HP</p>
             </div>
             <div class="caja">
                 <img src="./img/Logo/logo-asus.png" alt="logo ASUS" height="180px" width="180px">
-                <p>ASUS</p>
             </div>
-          
-            <div class="caja">
+                      <div class="caja">
                 <img src="./img/Logo/logo-Samsung.png" alt="logo Samsung" height="180px" width="180px">
             </div>
             <div class="caja">
                 <img src="./img/Logo/logo-dell.png" alt="logo dell" height="180px" width="180px">
-                <p>DELL</p>
             </div>
+            <div class="caja">
+              <img src="./img/Logo/logo-apple.png" alt="logo apple" height="180px" width="180px">
+          </div>
+          <div class="caja">
+            <img src="./img/Logo/logo-lenovo.png" alt="logo lenovo" height="180px" width="180px">
+        </div>
           </div>
     </main>
 
     <section>
-        <h2>Prime selection</h2>
-        <div class="grid text-center">
-            <div class="g-col-6">
-                <img src="./img/Notebooks/Asus1.png" alt="ASUS" height="300x" width="350px">
-                <p>ASUS</p>
-                <p>ASUS - C403NA-FQ0062</p>
-            </div>
-            <div class="g-col-6">
-                <img src="./img/Notebooks/Dell1.jpeg" alt=" DELL" height="300x" width="350px">
-                <p>DELL</p>
-                <p>NOTEBOOK DELL TF2Y5 AMD R5</p>
-            </div>
-          
-            <div class="g-col-6">
-                <img src="./img/Notebooks/HP1.jpeg" alt=" HP" height="300x" width="350px">
-                <p>HP</p>
-                <p>HP - Notebook 15S-EQ1066NL-Chalkboard gray</p>
-            </div>
-            <div class="g-col-6">
-                <img src="./img/Notebooks/Samsung1.png" alt=" Samsung" height="300x" width="350px">
-                <p>Samsung</p>
-                <p>SAMSUNG - Notebook GALAXY BOOK3 PRO-Graphite</p>
-            </div>
-          </div>
-    </section>
-
-    <main>
-      <h2>Poder elegir todos los componentes</h2>
+      <h2 class="tituloH2">Elegi tu notebook</h2>
       <div class="cajasGrid">
           <div class="caja">
-            <p>CPU - Procesador</p>
-            <img src="./img/Componentes/cpu.webp" alt="CPU" height="180px" width="180px">
+            <img src="./img/Notebooks/Asus1.png" alt="ASUS" height="300x" width="350px">
+            <p>ASUS</p>
+            <p>ASUS - C403NA-FQ0062</p>
           </div>
           <div class="caja">
-            <p>Placa madre - Motherboard</p>
-              <img src="./img/Componentes/placa-madre.webp" alt="Placa madre" height="180px" width="180px">
+            <img src="./img/Notebooks/Dell1.jpeg" alt=" DELL" height="300x" width="350px">
+            <p>DELL</p>
+            <p>NOTEBOOK DELL TF2Y5 AMD R5</p>
+          </div>
+                  <div class="caja">
+            <img src="./img/Notebooks/HP1.jpeg" alt=" HP" height="300x" width="350px">
+            <p>HP</p>
+            <p>HP - Notebook 15S-EQ1066NL-Chalkboard gray</p>
           </div>
           <div class="caja">
-            <p>Memoria RAM</p>
-              <img src="./img/Componentes/RAM.avif" alt="RAM" height="180px" width="180px">
+            <img src="./img/Notebooks/Samsung1.png" alt=" Samsung" height="300x" width="350px">
+            <p>Samsung</p>
+            <p>SAMSUNG - Notebook GALAXY BOOK3 PRO-Graphite</p>
           </div>
           <div class="caja">
-            <p>Disco sólido</p>
-              <img src="./img/Componentes/disco-duro.webp" alt="disco solido" height="180px" width="180px">
+            <img src="./img/Notebooks/MacBook.jpeg" alt=" Apple" height="300x" width="350px">
+            <p>Apple</p>
+            <p>MacBook Air 13", hip Apple M1 con CPU 8‑core, GPU 7‑core</p>
+          </div>
+          <div class="caja">
+            <img src="./img/Notebooks/lenovo-notebook.webp" alt=" Lenovo" height="300x" width="350px">
+            <p>Lenovo</p>
+            <p>Legion 5 Pro 16IAH7H, 16 pollici, processore Intel® Core™ i7</p>
+          </div>
+        </div>
+      </section>
+
+    <main>
+      <h2 class="tituloH2">Con nosotros podes elegir todos los componentes</h2>
+          <div class="componentes">
+              <img src="./img/Componentes/componentesPC.jpeg" alt="componentes pc" height="auto" width="auto">
           </div>
         </div>
   </main>
 
-    <footer>
+    <footer class="footer">
+      <h2 class="text-bg-light p-3">Electronics</h2>
         <nav class="nav">
-            <a class="nav-link active" aria-current="page" href="#">Contactanos</a>
-            <a class="nav-link" href="#">Franquicias</a>
-            <a class="nav-link" href="#">Redes sociales</a>
+            <a class="nav-link active" aria-current="page" href="#" >Contactanos</a>
+            <a class="nav-link" href="#" >Franquicias</a>
+            <a class="nav-link" href="#" >Redes sociales</a>
             <a class="nav-link disabled">Copyrigth</a>
           </nav>
     </footer>

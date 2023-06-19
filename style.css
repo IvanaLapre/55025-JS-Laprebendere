@@ -1,21 +1,72 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        margin-left: 100%;
+        width: 300%;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.headerInicio{
+    text-align: center;
+    color: rgb(229, 255, 0) !important;
+    background-image: url(./img/fondo-bienvenida.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    color: black;
+    opacity: 1.9;
+  }
+
+  .headerInicio h1{
+    font-size: 120px;
+    padding-top: 180px;
+    animation: 2s;
+    animation-name: aparecer;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+  }
+
+  .headerInicio h3 {
+    color: rgb(234, 255, 0);
+    font-size: 50px;
+    font-weight: 500;
+    font-style: italic;
+  }
+
 .cajasGrid{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
 /*     grid-template-rows: auto auto;
     width: 80%;
     margin: 0 auto; */
     background-color: blueviolet;
   /*   padding: 20px; */
-    border: 1px solid black;
+  border: 2px solid rgb(178, 178, 178);
 }
 
 .caja{
 /*     width: 150px;
     height: 150px; */
-    border: 2px solid black;
-    background-color: aliceblue;
+    border: 2px solid rgb(178, 178, 178);
+    gap: 5px;
+    background-color:white;
 /*     margin: 15px; */
     text-align: center;
 /*     line-height: 30px; */
 
 }
+.navbar.navbar-expand-lg.bg-body-tertiary{
+    background: linear-gradient(45deg, rgb(189, 213, 239), rgb(65, 121, 217), rgb(41, 41, 149), rgb(47, 66, 150));
+}
+
+footer{
+    background: linear-gradient(45deg,  rgb(47, 66, 150), rgb(41, 41, 149), rgb(65, 121, 217), rgb(189, 213, 239));}

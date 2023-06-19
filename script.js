@@ -1,5 +1,5 @@
 //Ingresar nombre
-let nombreUsuario = prompt("ingrese su nombre")
+/* let nombreUsuario = prompt("ingrese su nombre") */
 
 alert("Bienvenido " + nombreUsuario)
 console.log("Bienvenido " + nombreUsuario)
@@ -8,7 +8,7 @@ alert("Electronics se especializa en la venta de Notebooks hechas a medida")
 //Funcion elegir modelo
 let precio = 450000
 
-let modelo = modeloNotebook(prompt("Seleccione el modelo de su Notebook (precio base $450.000): \n1-ASUS BlackNight (C403NA-FQ0062) \n2-ASUS Ultrabook (UX3402ZA-KM637W-PONDER BLUE) \n3-ASUS Neron (F1605ZA-MB198W-TRANSPARENT SILVER) \n4-ASUS Tramonto (Notebook F515EA-BQ1563W)"))
+/* let modelo = modeloNotebook(prompt("Seleccione el modelo de su Notebook (precio base $450.000): \n1-ASUS BlackNight (C403NA-FQ0062) \n2-ASUS Ultrabook (UX3402ZA-KM637W-PONDER BLUE) \n3-ASUS Neron (F1605ZA-MB198W-TRANSPARENT SILVER) \n4-ASUS Tramonto (Notebook F515EA-BQ1563W)")) */
 
 function modeloNotebook(modelo){
     if(modelo==1)
@@ -24,7 +24,7 @@ function modeloNotebook(modelo){
 console.log("El modelo seleccionado es: " + modelo)
 
 //Funcion elegir memoria RAM
-const memoria = memoriaRAM(prompt("Selecciona la memoria RAM: \n1- 8 GB RAM $25.000 \n2- 16 GB RAM $50.000"))
+/* const memoria = memoriaRAM(prompt("Selecciona la memoria RAM: \n1- 8 GB RAM $25.000 \n2- 16 GB RAM $50.000")) */
 
 function memoriaRAM(memoria){
     if(memoria==1)
@@ -38,7 +38,7 @@ console.log("La memoria seleccionada es: " + memoria)
 
 //Tiempo de entrega
 
-let destino = prompt("Seleccione el destino de entrega \n1-BSAS \n2-CORDOBA \n3-SANTA FE \n4-MENDOZA")
+/* let destino = prompt("Seleccione el destino de entrega \n1-BSAS \n2-CORDOBA \n3-SANTA FE \n4-MENDOZA") */
 
 let destinoCABA = 1
 let destinoBSAS = 2
