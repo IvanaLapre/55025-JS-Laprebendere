@@ -7,6 +7,7 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <!-- //google font // -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -75,47 +76,73 @@
           </div>
     </main>
 
-    <section class="webSection">
+<!--     <section id="contenedorNotebooks">
+      <div class="webSection">
       <h2 class="tituloH2">Elegi tu notebook</h2>
-      <div class="cajasGrid">
-          <div class="caja">
-            <img src="./img/Notebooks/Asus1.png" alt="ASUS" height="300x" width="350px">
-            <p>ASUS</p>
-            <p>ASUS VivoBookLED C403NA-FQ0062</p>
-            <button onclick="elegirPC">Agregar al carrito</button>
-          </div>
-          <div class="caja">
-            <img src="./img/Notebooks/Dell1.jpeg" alt=" DELL" height="300x" width="350px">
-            <p>DELL</p>
-            <p>NOTEBOOK DELL TF2Y5 AMD R5</p>
-            <button onclick="elegirPC">Agregar al carrito</button>
-          </div>
-                  <div class="caja">
-            <img src="./img/Notebooks/HP1.jpeg" alt=" HP" height="300x" width="350px">
-            <p>HP</p>
-            <p>HP - Notebook 15S-EQ1066NL-Chalkboard gray</p>
-            <button onclick="elegirPC">Agregar al carrito</button>
-          </div>
-          <div class="caja">
-            <img src="./img/Notebooks/Samsung1.png" alt=" Samsung" height="300x" width="350px">
-            <p>Samsung</p>
-            <p>SAMSUNG - Notebook GALAXY BOOK3 PRO-Graphite</p>
-            <button onclick="elegirPC">Agregar al carrito</button>
-          </div>
-          <div class="caja">
-            <img src="./img/Notebooks/MacBook.jpeg" alt=" Apple" height="300x" width="350px">
-            <p>Apple</p>
-            <p>MacBook Air 13", hip Apple M1 con CPU 8‑core, GPU 7‑core</p>
-            <button onclick="elegirPC">Agregar al carrito</button>
-          </div>
-          <div class="caja">
-            <img src="./img/Notebooks/lenovo-notebook.webp" alt=" Lenovo" height="300x" width="350px">
-            <p>Lenovo</p>
-            <p>Legion 5 Pro 16IAH7H, 16 pollici, processore Intel® Core™ i7</p>
-            <button onclick="elegirPC">Agregar al carrito</button>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="./img/Notebooks/Asus1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">ASUS VivoBookLED C403NA-FQ0062</h5>
+              <p class="card-text">ASUS VivoBook OLED C403NA-FQ0062, 15.6 2.8K, Intel® Core™ i5-12500H, 16GB RAM, 512GB SSD, Iris® Xe Graphics, Windows 11 Home.</p>
+            </div>
           </div>
         </div>
-      </section>
+
+         <div class="col">
+          <div class="card">
+            <img src="./img/Notebooks/Dell1.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">NOTEBOOK DELL TF2Y5 AMD R5</h5>
+              <p class="card-text">Notebook - TF2Y5 DELL, 15,6, Full-HD, Intel Core, 8 GB, 256 GB, Intel® UHD Graphics, Windows 11 Home Negro.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="./img/Notebooks/HP1.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">HP Notebook 15S-EQ1066NL-Chalkboard gray</h5>
+              <p class="card-text">HP 14s-dq5001ns, 14 Full HD, Intel® Core™ i5-1235U, 8GB RAM, 512GB SSD, Iris® Xᵉ, W11 H.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="./img/Notebooks/Samsung1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">SAMSUNG Notebook GALAXY BOOK3 PRO-Graphite</h5>
+              <p class="card-text">Samsung Galaxy Book3, 15.6 Full-HD, Intel® Core™ i5-1335U, 8GB RAM, 512GB SSD, Iris® Xe Graphics, Windows 11 Home, Teclado Retroiluminado</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./img/Notebooks/MacBook.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">MacBook Air 13, hip Apple M1 con CPU 8‑core, GPU 7‑core</h5>
+              <p class="card-text">APPLE MacBook Air (2020), 13.3 Retina, Chip M1 de Apple, 8 GB, 256 GB SSD, MacOS, Teclado Magic Keyboard Touch ID, Gris espacial.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card">
+            <img src="./img/Notebooks/lenovo-notebook.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Legion 5 Pro 16IAH7H, 16 pollici, processore Intel® Core™ i7</h5>
+              <p class="card-text">Portátil gaming - Lenovo Legion 5 15IAH7H, 15.6 Full HD, Intel® Core™ i7-12700H, 16GB RAM, 512GB SSD, GeForce RTX™ 3060, Windows 11 Home.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+      </section> -->
 
     <div class="webSection">
       <h2 class="tituloH2">Animate a elegir todos los componentes!</h2>
@@ -139,5 +166,6 @@
 
 
     <script src="./script.js"></script>
+    
 </body>
 </html>
