@@ -1,102 +1,42 @@
 //Ingresar nombre
-/* let nombreUsuario = prompt("ingrese su nombre") */
+/* let nombreUsuario = prompt("ingrese su nombre")
 
-alert("Bienvenido " + nombreUsuario)
+alert("Bienvenido a Electronics" + " " + nombreUsuario)
 console.log("Bienvenido " + nombreUsuario)
-alert("Electronics se especializa en la venta de Notebooks hechas a medida")
+alert("Electronics se especializa en la venta de Notebooks personalizadas")
+ */
+//Objetos + Array
 
-//Funcion elegir modelo
-let precio = 450000
+class notebooks {
 
-/* let modelo = modeloNotebook(prompt("Seleccione el modelo de su Notebook (precio base $450.000): \n1-ASUS BlackNight (C403NA-FQ0062) \n2-ASUS Ultrabook (UX3402ZA-KM637W-PONDER BLUE) \n3-ASUS Neron (F1605ZA-MB198W-TRANSPARENT SILVER) \n4-ASUS Tramonto (Notebook F515EA-BQ1563W)")) */
-
-function modeloNotebook(modelo){
-    if(modelo==1)
-    return "ASUS BlackNight (C403NA-FQ0062)"
-    else if (modelo==2)
-    return "ASUS Ultrabook (UX3402ZA-KM637W-PONDER BLUE)"
-    else if(modelo==3)
-    return "ASUS Neron (F1605ZA-MB198W-TRANSPARENT SILVER)"
-    else if(modelo==4)
-    return "ASUS Tramonto (Notebook F515EA-BQ1563W)"
-}
-
-console.log("El modelo seleccionado es: " + modelo)
-
-//Funcion elegir memoria RAM
-/* const memoria = memoriaRAM(prompt("Selecciona la memoria RAM: \n1- 8 GB RAM $25.000 \n2- 16 GB RAM $50.000")) */
-
-function memoriaRAM(memoria){
-    if(memoria==1)
-        alert("El costo total es de:  " + (25000+precio))
-    else if(memoria==2)
-    alert("El costo total es de:  " + (50000+precio))
-    else("Seleccionar opcion 1 o 2 para indicar la memoria deseada")
-}
-
-console.log("La memoria seleccionada es: " + memoria)
-
-//Tiempo de entrega
-
-/* let destino = prompt("Seleccione el destino de entrega \n1-BSAS \n2-CORDOBA \n3-SANTA FE \n4-MENDOZA") */
-
-let destinoCABA = 1
-let destinoBSAS = 2
-let destinoSANTAFE = 3
-let destinoCORDOBA =  8
-let destinoMENDOZA = 16
-
-switch(destino){
-    case "1":
-        var tiempoEntrega = destinoBSAS - destinoCABA
-        alert("El tiempo de entrega estimado  hasta BsAs es de horas:  " + tiempoEntrega)
-        break
-    case "2":
-        var tiempoEntrega = destinoCORDOBA - destinoCABA
-        alert("El tiempo de entrega estimado hasta Cordoba es de horas:  " + tiempoEntrega)
-        break
-    case "3":
-        var tiempoEntrega = destinoSANTAFE - destinoCABA
-        alert("El tiempo de entrega estimado hasta Santa Fe es de horas:  " + tiempoEntrega)
-        break
-    case "4":
-        var tiempoEntrega = destinoMENDOZA - destinoCABA
-        alert("El tiempo de entrega estimado hasta Mendoza es de horas:  " + tiempoEntrega)
-        break
-
-        default:
-            alert("Por favor eliga una opcion")
-            break;
-} 
-
-console.log("El tiempo de entrega estimado hasta " + destino) + console.log("es de horas: " + tiempoEntrega)
-
-//Creo un Array
-
-const productos = [
-    {
-        id: 1,
-        nombre : "ASUS BlackNight (C403NA-FQ0062)",
-        precio : 450000
-    },
-    {
-        id: 2,
-        nombre : "ASUS Ultrabook (UX3402ZA-KM637W-PONDER BLUE)",
-        precio : 450000
-    },
-    {
-        id: 3,
-        nombre : "ASUS Neron (F1605ZA-MB198W-TRANSPARENT SILVER)",
-        precio : 450000
-    },
-    {
-        id: 4,
-        nombre : "ASUS Tramonto (Notebook F515EA-BQ1563W)",
-        precio : 450000
+    constructor(id,marca,nombre,descripcion,precio,cantidad){
+        this.id = id;
+        this.marca = marca;
+        this.nombre = nombre;
+        this.descrpcion = descripcion;
+        this.precio = precio;
+        this.cantidad = cantidad
     }
-    ]
-    
-let productosDentroPresupuesto = parseInt(prompt("Quiere continuar realizando una compra?. Ahora tambien puede buscar productos dentro de su presupuesto. Indique el valor maximo de su presupuesto: "))
+}
+
+const producto1 = new notebooks(001,"ASUS","ASUS VivoBookLED C403NA-FQ0062"," ASUS VivoBook OLED C403NA-FQ0062, 15.6 2.8K, Intel® Core™ i5-12500H, 16GB RAM, 512GB SSD, Iris® Xe Graphics, Windows 11 Home",550000,10)
+
+const producto2 = new notebooks(002,"DELL","NOTEBOOK DELL TF2Y5 AMD R5"," Notebook - TF2Y5 DELL, 15,6, Full-HD, Intel Core, 8 GB, 256 GB, Intel® UHD Graphics, Windows 11 Home Negro",420000,15)
+
+const producto3 = new notebooks(003,"HP","HP Notebook 15S-EQ1066NL-Chalkboard gray","HP 14s-dq5001ns, 14 Full HD, Intel® Core™ i5-1235U, 8GB RAM, 512GB SSD, Iris® Xᵉ, W11 H",525000,14)
+
+const producto4 = new notebooks(004,"SAMSUNG","SAMSUNG Notebook GALAXY BOOK3 PRO-Graphite","Samsung Galaxy Book3, 15.6 Full-HD, Intel® Core™ i5-1335U, 8GB RAM, 512GB SSD, Iris® Xe Graphics, Windows 11 Home, Teclado Retroiluminado",605300,20)
+
+const producto5 = new notebooks(005,"APPLE","MacBook Air 13, hip Apple M1 con CPU 8‑core, GPU 7‑core","APPLE MacBook Air (2020), 13.3 Retina, Chip M1 de Apple, 8 GB, 256 GB SSD, MacOS, Teclado Magic Keyboard Touch ID, Gris espacial",875000,8)
+
+const producto6 = new notebooks(006,"LENOVO","Legion 5 Pro 16IAH7H, 16 pollici, processore Intel® Core™ i7","Portátil gaming - Lenovo Legion 5 15IAH7H, 15.6 Full HD, Intel® Core™ i7-12700H, 16GB RAM, 512GB SSD, GeForce RTX™ 3060, Windows 11 Home",925450,12)
+
+const arrayProductos = [producto1, producto2, producto3, producto4, producto5, producto6]
+
+console.log(arrayProductos)
+
+
+let productosDentroPresupuesto = parseInt(prompt("Quiere continuar realizando una compra?. Ahora tambien puede buscar productos dentro de su presupuesto. Indique un valor: "))
 
 const DentroPresupuesto = productos.filter((elementos)=>(elementos.precio < productosDentroPresupuesto))
     
