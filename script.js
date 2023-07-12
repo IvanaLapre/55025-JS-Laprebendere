@@ -1,3 +1,5 @@
+Swal.fire('Bienvenido a Electronics')
+
 //Ingresar nombre
 let nombreUsuario = prompt("ingrese su nombre")
 
