@@ -87,8 +87,14 @@ function agregarCarrito (){
     console.log("agregar carrito")
 }
 
-/* let productosDentroPresupuesto = parseInt(prompt("Quiere continuar realizando una compra?. Ahora tambien puede buscar productos dentro de su presupuesto. Indique un valor: "))
+//AJAX y JSON
 
-const DentroPresupuesto = productos.filter((elementos)=>(elementos.precio < productosDentroPresupuesto))
-    
-console.log(DentroPresupuesto) */
+fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
+.then(response=>response.json())
+.then(dara=>{
+    console.log(data)
+})
+
+.catch()
+
+.finally
