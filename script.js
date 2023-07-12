@@ -1,4 +1,9 @@
-Swal.fire('Bienvenido a Electronics')
+Swal.fire({
+    title: 'Bienvenido a Electronics!',
+    text: 'Comenzar mi compra',
+    icon: 'success',
+    confirmButtonText: 'GO!'
+})
 
 //Ingresar nombre
 let nombreUsuario = prompt("ingrese su nombre")
