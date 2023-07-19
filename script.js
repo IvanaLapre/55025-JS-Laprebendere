@@ -92,14 +92,19 @@ function agregarCarrito (){
     console.log("agregar carrito")
 }
 
-//AJAX y JSON
+const lista = document.getElementById('lista')
 
-fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
-.then(response=>response.json())
-.then(data=>{
-    console.log(data)
-})
+fetch('data.json')
+ .then( (res) => res.json ())
+ .then ((data) => {
+    data.forEach((producto) => {
+        const li = document.createElement('li')
+        li.innerHTML =
+            <h4>${producto.nombre}</h4>
+            <p>${producto.precio}</p>
+            <p>${producto.descripcion}</p>
+            
 
-.catch()
-
-.finally
+        lista.append(li)
+    })
+ })

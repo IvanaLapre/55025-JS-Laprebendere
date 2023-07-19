@@ -1,0 +1,14 @@
+[{"id": 1, "marca": "ASUS", "nombre": "ASUS VivoBookLED C403NA-FQ0062", "descripcion":" ASUS VivoBook OLED C403NA-FQ0062, 15.6 2.8K, Intel® Core™ i5-12500H, 16GB RAM, 512GB SSD, Iris® Xe Graphics, Windows 11 Home", "precio": 550000, "cantidad": 10, "img":"./img/Notebooks/Asus1.png"},
+
+{"id": 2, "marca":"DELL", "nombre":"NOTEBOOK DELL TF2Y5 AMD R5", "descripcion":" Notebook - TF2Y5 DELL, 15,6, Full-HD, Intel Core, 8 GB, 256 GB, Intel® UHD Graphics, Windows 11 Home Negro", "precio":420000, "cantidad":15, "img":"./img/Notebooks/Dell1.jpeg"},
+
+{"id": 3,"marca":"HP","nombre":"HP Notebook 15S-EQ1066NL-Chalkboard gray","descripcion":"HP 14s-dq5001ns, 14 Full HD, Intel® Core™ i5-1235U, 8GB RAM, 512GB SSD, Iris® Xᵉ, W11 H","precio":525000,"cantidad":14, "img":"./img/Notebooks/HP1.jpeg"},
+
+{"id": 4,"marca":"SAMSUNG","nombre":"SAMSUNG Notebook GALAXY BOOK3 PRO-Graphite","descripcion":"Samsung Galaxy Book3, 15.6 Full-HD, Intel® Core™ i5-1335U, 8GB RAM, 512GB SSD, Iris® Xe Graphics, Windows 11 Home, Teclado Retroiluminado","precio":605300, "cantidad":20, "img":"./img/Notebooks/Samsung1.png"},
+
+{"id": 5,"marca":"APPLE","nombre":"MacBook Air 13, hip Apple M1 con CPU 8‑core, GPU 7‑core", "descripcion":"APPLE MacBook Air (2020), 13.3 Retina, Chip M1 de Apple, 8 GB, 256 GB SSD, MacOS, Teclado Magic Keyboard Touch ID, Gris espacial","precio":875000, "cantidad":8, "img":"./img/Notebooks/MacBook.jpeg"},
+
+{"id": 6,"marca":"LENOVO","nombre":"Legion 5 Pro 16IAH7H, 16 pollici, processore Intel® Core™ i7", "descripcion":"Portátil gaming - Lenovo Legion 5 15IAH7H, 15.6 Full HD, Intel® Core™ i7-12700H, 16GB RAM, 512GB SSD, GeForce RTX™ 3060, Windows 11 Home","precio":925450, "cantidad":12, "img":"./img/Notebooks/lenovo-notebook.webp"}]
+
+
+
